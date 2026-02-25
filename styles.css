@@ -1,231 +1,171 @@
-/* === BOLD CORPORATE THEME === */
+/* === PCSR TRAINING PORTAL — FINAL CORRECTED CSS === */
+
 :root {
-  --black: #111111;
-  --charcoal: #222222;
-  --silver: #e5e5e5;
-  --text-light: #f4f4f4;
-  --accent: #555555;
   --primary-blue: #143d6b;
-  --border-light: #dce1eb;
+  --sidebar-width: 260px;
+  --bg-color: #f4f4f4;
+  --text-dark: #333;
 }
 
-/* === LAYOUT === */
+/* 1. SMOOTH SCROLLING 
+   This allows the sidebar links to "jump" to sections correctly */
 html {
-  scroll-behavior: smooth; /* Makes sidebar links glide to the section */
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #f4f4f4;
   display: flex;
-  min-height: 100vh;
+  background: var(--bg-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
 }
 
-/* === SIDEBAR === */
+/* 2. SIDEBAR 
+   Fixed position so it stays on the left while you scroll content */
 .sidebar {
-  width: 260px;
-  background: var(--black);
-  color: var(--text-light);
+  width: var(--sidebar-width);
+  background: #111;
+  color: white;
   height: 100vh;
-  position: fixed;
+  position: fixed; 
   left: 0;
   top: 0;
-  padding: 25px 20px;
+  padding: 20px;
   box-sizing: border-box;
-  z-index: 1000;
   display: flex;
   flex-direction: column;
-}
-
-.sidebar-logo img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 16px;
-  display: block;
-  margin: 0 auto 15px;
+  z-index: 1000;
 }
 
 .sidebar-title {
+  font-size: 1.2rem;
+  margin: 20px 0;
   text-align: center;
-  margin: 10px 0 25px;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  overflow-y: auto; /* Adds scroll if there are many modules */
-  flex: 1;
+  gap: 5px;
+  overflow-y: auto; /* Allows sidebar to scroll if list is long */
 }
 
 .nav-link {
-  color: var(--silver);
+  color: #ccc;
   text-decoration: none;
-  padding: 10px 12px;
+  padding: 12px;
   border-radius: 4px;
-  transition: all 0.25s ease;
+  transition: background 0.3s, color 0.3s;
   font-size: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-link:hover,
-.nav-link.active {
-  background: var(--charcoal);
-  padding-left: 18px;
-  color: #fff;
+.nav-link:hover, .nav-link.active {
+  background: #333;
+  color: white;
 }
 
 .nav-link.completed::after {
-  content: " ✔";
-  float: right;
+  content: "✔";
   color: #4caf50;
   font-weight: bold;
 }
 
-.nav-link.locked {
-  opacity: 0.5;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-/* === CONTENT WRAPPER === */
+/* 3. MAIN CONTENT LAYOUT 
+   margin-left matches sidebar width to prevent overlap */
 .content-wrapper {
-  margin-left: 260px; /* Aligns content to the right of the fixed sidebar */
-  padding: 30px 40px;
-  width: calc(100% - 260px);
-  display: flex;
-  flex-direction: column;
+  margin-left: var(--sidebar-width); 
+  width: calc(100% - var(--sidebar-width));
+  padding: 40px;
   box-sizing: border-box;
+  min-height: 100vh;
 }
 
-/* === PROGRESS BAR === */
-.progress-container {
-  width: 100%;
-  background: #dcdcdc;
-  height: 10px;
-  border-radius: 5px;
-  margin-bottom: 25px;
-  overflow: hidden;
-  position: sticky;
-  top: 10px;
-  z-index: 999;
+main {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.progress-bar {
-  height: 10px;
-  width: 0%;
-  background: var(--black);
-  transition: width 0.4s ease;
-}
-
-/* === CONTENT SECTIONS === */
+/* 4. CONTENT SECTIONS 
+   Opacity set to 1 to ensure visibility on load */
 .content-section {
   background: white;
-  padding: 35px;
+  padding: 40px;
+  margin-bottom: 60px;
   border-radius: 8px;
-  margin-bottom: 50px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  opacity: 1; /* Changed from 0 to 1 so content is visible */
-  transform: translateY(0); /* Changed from 20px to 0 */
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-/* ===== MAIN CONTENT ===== */
-main {
-  /* Removed margin-left: 260px; to prevent double-spacing */
-  flex: 1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  opacity: 1; 
+  transform: translateY(0);
 }
 
 .content-section h2 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
   color: var(--primary-blue);
   border-bottom: 2px solid #eee;
   padding-bottom: 10px;
+  margin-top: 0;
 }
 
-p {
-  margin-bottom: 1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* ===== CARDS & QUIZ ===== */
+/* 5. CARDS & QUIZ UI */
 .card {
   background: #fdfdfd;
-  border: 1px solid var(--border-light);
-  padding: 1.5rem;
+  border: 1px solid #dce1eb;
+  padding: 20px;
   border-radius: 6px;
-  margin: 1.5rem 0;
-}
-
-.quiz-question {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
+  margin: 20px 0;
 }
 
 .quiz-option {
   display: block;
   width: 100%;
   text-align: left;
-  padding: 0.8rem 1rem;
-  margin: 0.5rem 0;
-  border: 1px solid #c4cbe0;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
   background: #fff;
-  border-radius: 4px;
   cursor: pointer;
-  transition: background 0.2s;
+  border-radius: 4px;
+  transition: 0.2s;
 }
 
 .quiz-option:hover {
-  background: #f0f4f8;
+  background: #f0f7ff;
 }
 
 .quiz-option.selected {
   background: var(--primary-blue);
-  color: #fff;
+  color: white;
   border-color: var(--primary-blue);
 }
 
 .primary-btn {
-  padding: 0.8rem 1.5rem;
   background: var(--primary-blue);
-  color: #fff;
+  color: white;
   border: none;
+  padding: 14px 28px;
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.3s;
+  font-size: 1rem;
+  margin-top: 10px;
 }
 
 .primary-btn:hover {
   background: #0d2a4a;
 }
 
-.quiz-result {
-  margin-top: 1rem;
-  font-weight: bold;
-  color: var(--primary-blue);
-}
-
-/* ===== DARK MODE ===== */
+/* 6. DARK MODE */
 body.dark {
   background: #1a1a1a;
-  color: #eaeaea;
+  color: #eee;
 }
 
 body.dark .content-section {
   background: #2a2a2a;
-  color: #eaeaea;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-body.dark .content-section h2 {
-  color: #6da5ff;
-  border-bottom-color: #444;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
 body.dark .card {
@@ -233,22 +173,21 @@ body.dark .card {
   border-color: #444;
 }
 
-body.dark .quiz-option {
-  background: #3a3a3a;
-  color: #fff;
-  border-color: #555;
+/* 7. PROGRESS BAR */
+.progress-container {
+  width: 100%;
+  background: #ddd;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-body.dark p {
-  color: #ccc;
-}
-
-/* ===== FOOTER ===== */
-footer {
+.progress-bar {
+  height: 100%;
   background: var(--primary-blue);
-  color: #fff;
-  text-align: center;
-  padding: 1.5rem;
-  margin-top: 40px;
-  border-radius: 8px 8px 0 0;
+  width: 0%;
+  transition: width 0.4s ease;
 }
