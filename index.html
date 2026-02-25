@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PCSR Training Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <img src="ConfinedNix.png" alt="PCSR Logo">
+    </div>
+
+    <h2 class="sidebar-title">PCSR Training</h2>
+
+    <nav class="sidebar-nav">
+  <a href="#home" class="nav-link">Home</a>
+  <a href="#module1" class="nav-link">Module 1</a>
+  <a href="#module2" class="nav-link">Module 2</a>
+  <a href="#module3" class="nav-link">Module 3</a>
+  <a href="#module4" class="nav-link">Module 4</a>
+  <a href="#module5" class="nav-link">Module 5</a>
+  <a href="#module6" class="nav-link">Module 6</a>
+  <a href="#finalExam" class="nav-link">Final Exam</a>
+</nav>
+
+<button id="darkModeToggle" class="primary-btn" style="margin-top: 1rem;">
+  Dark Mode
+</button>
+
+</aside>
+
+  <!-- MAIN CONTENT WRAPPER -->
+  <div class="content-wrapper">
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  
+ <!-- ========================= -->
+<!-- SECTION 1 — SYSTEMS OVERVIEW -->
+<!-- ========================= -->
+
+<section id="module1" class="content-section">
+
+  <h2>Section 1: Systems Overview</h2>
+  <p>This module introduces the core systems used by Pharmacy Customer Service Representatives (PCSRs). You will learn how to access, navigate, and utilize each platform effectively.</p>
+
+  <!-- 1.1 OKTA & SYSTEM ACCESS -->
+  <article class="card">
+    <h3>1.1 OKTA Access & Login</h3>
+    <p>OKTA is the secure single sign-on (SSO) gateway for all Rightway systems.</p>
+
+    <h4>Key Points</h4>
+    <ul>
+      <li>All systems (Tredium, MHK, Advocate, Client Matrix) are accessed through OKTA.</li>
+      <li>Never share login credentials.</li>
+      <li>Log out when stepping away from your workstation.</li>
+    </ul>
+
+    <h4>Login Workflow</h4>
+    <ol>
+      <li>Open the OKTA dashboard.</li>
+      <li>Select the system tile (Tredium, MHK, Advocate, etc.).</li>
+      <li>System launches automatically via SSO.</li>
+    </ol>
+  </article>
+
+  <!-- 1.2 TREDIUM -->
+  <article class="card">
+    <h3>1.2 Tredium Navigation & Functions</h3>
+    <p>Tredium is the primary system for claims processing, member research, and benefit verification.</p>
+
+    <h4>Main Navigation Icons</h4>
+    <ul>
+      <li><strong>Menu (≡):</strong> Opens or collapses the left navigation panel.</li>
+      <li><strong>House icon:</strong> Returns to the first opened blade.</li>
+      <li><strong>Eye with slash:</strong> Closes all blades except the one selected.</li>
+      <li><strong>Large X:</strong> Closes all blades (use cautiously).</li>
+    </ul>
+
+    <h4>Key Blades</h4>
+
+    <div class="card">
+      <h4>Patient Blade</h4>
+      <ul>
+        <li><strong>Cardholder Number & Person Code:</strong> Identifies member and dependents.</li>
+        <li><strong>Address Tab:</strong> Physical, mailing, school, and alternate addresses.</li>
+        <li><strong>Benefit Balances:</strong> Deductible and out-of-pocket accumulators.</li>
+        <li><strong>Communication:</strong> Phone, email, and contact preferences.</li>
+        <li><strong>Drug Mgmt:</strong> Copay Assistance Program (CAP) tracking.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Claim Lookup Blade</h4>
+      <ul>
+        <li>Search by member, RX number, NDC, pharmacy NPI, or date range.</li>
+        <li>Use filters to narrow results (trial vs production, pending, etc.).</li>
+        <li>Best practice: Start broad → then narrow.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Claim Information Blade</h4>
+      <ul>
+        <li><strong>Response tab:</strong> Copay, ingredient cost, dispensing fee, deductible, OOP, PA number.</li>
+        <li><strong>DUR tab:</strong> Drug Utilization Review alerts.</li>
+        <li><strong>COB tab:</strong> Coordination of Benefits details.</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- 1.3 MHK -->
+  <article class="card">
+    <h3>1.3 MHK (Member Health Key)</h3>
+    <p>MHK is used for prior authorizations, appeals, and clinical documentation.</p>
+
+    <h4>Core Functions</h4>
+    <ul>
+      <li>Create and manage PA cases.</li>
+      <li>Submit appeals and RFIs.</li>
+      <li>Document clinical decisions.</li>
+    </ul>
+
+    <h4>Common Workflow</h4>
+    <ol>
+      <li>Open member profile.</li>
+      <li>Navigate to <strong>Care → Pharmacy Authorization → Add</strong>.</li>
+      <li>Enter NDC, quantity, duration, diagnosis, and provider info.</li>
+      <li>Select priority (standard or expedited).</li>
+    </ol>
+  </article>
+
+  <!-- 1.4 ADVOCATE -->
+  <article class="card">
+    <h3>1.4 Advocate System</h3>
+    <p>Advocate is the communication and ticketing system for documenting all member interactions.</p>
+
+    <h4>Key Features</h4>
+    <ul>
+      <li><strong>Filters:</strong> Service flag, subject category, queue, status.</li>
+      <li><strong>Ticket claiming:</strong> “Get Next Ticket” or “Claim & Work”.</li>
+      <li><strong>Documentation:</strong> Every call, email, override, and PA must be logged.</li>
+    </ul>
+  </article>
+
+  <!-- QUIZ -->
+  <section class="quiz card">
+    <h3>Quick Quiz: Systems Overview</h3>
+
+    <div class="quiz-question" data-answer="OKTA">
+      <p><strong>1.</strong> What system is used for single sign-on access?</p>
+      <button class="quiz-option">Email Login</button>
+      <button class="quiz-option">OKTA</button>
+      <button class="quiz-option">Direct URL</button>
+    </div>
+
+    <div class="quiz-question" data-answer="Tredium">
+      <p><strong>2.</strong> Which system is used for claims processing?</p>
+      <button class="quiz-option">MHK</button>
+      <button class="quiz-option">Advocate</button>
+      <button class="quiz-option">Tredium</button>
+    </div>
+
+    <div class="quiz-question" data-answer="Advocate">
+      <p><strong>3.</strong> Which system is used for documenting member interactions?</p>
+      <button class="quiz-option">Tredium</button>
+      <button class="quiz-option">MHK</button>
+      <button class="quiz-option">Advocate</button>
+    </div>
+
+    <button class="primary-btn">Check Answers</button>
+    <p class="quiz-result"></p>
+  </section>
+
+</section>
+<!-- ================================ -->
+<!-- SECTION 2 — MEMBER INTERACTION FUNDAMENTALS -->
+<!-- ================================ -->
+
+<section id="module2" class="content-section">
+
+  <h2>Section 2: Member Interaction Fundamentals</h2>
+  <p>This module covers the essential skills required to interact with members professionally, accurately, and with empathy. You will learn call flow, HIPAA verification, tone control, and how to guide members through pharmacy-related issues.</p>
+
+  <!-- 2.1 CALL FLOW OVERVIEW -->
+  <article class="card">
+    <h3>2.1 Standard Call Flow</h3>
+    <p>A consistent call flow ensures accuracy, compliance, and a positive member experience.</p>
+
+    <h4>Call Flow Steps</h4>
+    <ol>
+      <li><strong>Greeting:</strong> Warm, professional, and branded.</li>
+      <li><strong>Verification:</strong> Complete HIPAA verification before discussing PHI.</li>
+      <li><strong>Issue Discovery:</strong> Ask clarifying questions to understand the member’s need.</li>
+      <li><strong>Resolution:</strong> Research, troubleshoot, and provide clear next steps.</li>
+      <li><strong>Recap:</strong> Summarize what you did and what the member can expect.</li>
+      <li><strong>Closing:</strong> End the call with appreciation and professionalism.</li>
+    </ol>
+
+    <h4>Example Greeting</h4>
+    <div class="card">
+      <p><em>“Thank you for calling Rightway Pharmacy Support, this is Chandra. How may I assist you today?”</em></p>
+    </div>
+  </article>
+
+  <!-- 2.2 HIPAA VERIFICATION -->
+  <article class="card">
+    <h3>2.2 HIPAA Verification</h3>
+    <p>HIPAA verification must be completed before discussing any protected health information (PHI).</p>
+
+    <h4>Required Verification Elements</h4>
+    <ul>
+      <li>Member’s full name</li>
+      <li>Date of birth</li>
+      <li>Address or phone number on file</li>
+      <li>Relationship to cardholder (if dependent)</li>
+    </ul>
+
+    <h4>Verification Script</h4>
+    <div class="card">
+      <p><em>“Before we continue, I need to verify your account. Can you please confirm your full name, date of birth, and address on file?”</em></p>
+    </div>
+
+    <h4>When Verification Fails</h4>
+    <ul>
+      <li>Do not disclose any PHI.</li>
+      <li>Offer to contact the cardholder.</li>
+      <li>Document the failed verification in Advocate.</li>
+    </ul>
+  </article>
+
+  <!-- 2.3 EMPATHY & TONE -->
+  <article class="card">
+    <h3>2.3 Empathy, Tone, and De‑Escalation</h3>
+    <p>Members may be frustrated, confused, or dealing with urgent medication needs. Your tone sets the tone for the entire interaction.</p>
+
+    <h4>Empathy Phrases</h4>
+    <ul>
+      <li>“I understand how important this medication is for you.”</li>
+      <li>“Thank you for your patience while I look into this.”</li>
+      <li>“I can imagine how frustrating that must feel.”</li>
+    </ul>
+
+    <h4>De‑Escalation Techniques</h4>
+    <ul>
+      <li>Lower your voice to calm the member.</li>
+      <li>Acknowledge their concern before offering solutions.</li>
+      <li>Use “we” language to build partnership.</li>
+    </ul>
+  </article>
+
+  <!-- 2.4 LANGUAGE SERVICES -->
+  <article class="card">
+    <h3>2.4 Language Services</h3>
+    <p>Rightway provides interpreter services for members who prefer a language other than English.</p>
+
+    <h4>Workflow</h4>
+    <ol>
+      <li>Identify the member’s preferred language.</li>
+      <li>Initiate interpreter services through the approved vendor.</li>
+      <li>Remain on the line to guide the conversation.</li>
+      <li>Document interpreter usage in Advocate.</li>
+    </ol>
+  </article>
+
+  <!-- 2.5 CALL DOCUMENTATION -->
+  <article class="card">
+    <h3>2.5 Documentation Standards</h3>
+    <p>Every interaction must be documented clearly and accurately in Advocate.</p>
+
+    <h4>Required Elements</h4>
+    <ul>
+      <li>Reason for the call</li>
+      <li>Actions taken</li>
+      <li>Systems used (Tredium, MHK, etc.)</li>
+      <li>Outcome and next steps</li>
+      <li>Any escalations or transfers</li>
+    </ul>
+  </article>
+
+  <!-- QUIZ -->
+  <section class="quiz card">
+    <h3>Quick Quiz: Member Interaction Fundamentals</h3>
+
+    <div class="quiz-question" data-answer="Greeting">
+      <p><strong>1.</strong> What is the first step in the standard call flow?</p>
+      <button class="quiz-option">Verification</button>
+      <button class="quiz-option">Greeting</button>
+      <button class="quiz-option">Resolution</button>
+    </div>
+
+    <div class="quiz-question" data-answer="Full name, DOB, address">
+      <p><strong>2.</strong> What three elements are required for HIPAA verification?</p>
+      <button class="quiz-option">Name, pharmacy, medication</button>
+      <button class="quiz-option">Full name, DOB, address</button>
+      <button class="quiz-option">Phone number, ZIP code, plan name</button>
+    </div>
+
+    <div class="quiz-question" data-answer="Empathy">
+      <p><strong>3.</strong> Which skill helps build trust and calm frustrated members?</p>
+      <button class="quiz-option">Empathy</button>
+      <button class="quiz-option">Silence</button>
+      <button class="quiz-option">Escalation</button>
+    </div>
+
+    <button class="primary-btn">Check Answers</button>
+    <p class="quiz-result"></p>
+  </section>
+
+</section>
+<!-- ===================================== -->
+<!-- SECTION 3 — ELIGIBILITY & BENEFITS RESEARCH -->
+<!-- ===================================== -->
+
+<section id="module3" class="content-section">
+
+  <h2>Section 3: Eligibility & Benefits Research</h2>
+  <p>This module teaches you how to verify member eligibility, interpret benefit structures, understand cost‑share components, and navigate accumulators. These skills are essential for resolving pharmacy‑related questions accurately.</p>
+
+  <!-- 3.1 ELIGIBILITY BASICS -->
+  <article class="card">
+    <h3>3.1 Eligibility Basics</h3>
+    <p>Eligibility determines whether a member is active and covered under their pharmacy plan.</p>
+
+    <h4>Where to Check Eligibility</h4>
+    <ul>
+      <li><strong>Tredium → Patient Blade:</strong> Shows active/inactive status.</li>
+      <li><strong>Effective Dates:</strong> Coverage start and end dates.</li>
+      <li><strong>Plan Type:</strong> Commercial, Medicare, Medicaid, Employer‑sponsored.</li>
+    </ul>
+
+    <h4>Common Eligibility Issues</h4>
+    <ul>
+      <li>Coverage terminated</li>
+      <li>Future effective date</li>
+      <li>Incorrect pharmacy benefit (medical vs pharmacy)</li>
+      <li>Dependent not covered</li>
+    </ul>
+  </article>
+
+  <!-- 3.2 PLAN TYPES -->
+  <article class="card">
+    <h3>3.2 Plan Types & What They Mean</h3>
+
+    <div class="card">
+      <h4>Commercial Plans</h4>
+      <ul>
+        <li>Employer‑sponsored or individual plans</li>
+        <li>May include deductibles, copays, or coinsurance</li>
+        <li>Formularies vary by employer group</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Medicare Part D</h4>
+      <ul>
+        <li>Includes deductible, initial coverage, coverage gap, and catastrophic phases</li>
+        <li>Strict formulary rules</li>
+        <li>Often requires prior authorization</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Medicaid</h4>
+      <ul>
+        <li>State‑specific rules</li>
+        <li>Preferred drug lists (PDLs)</li>
+        <li>Strict quantity limits</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- 3.3 ACCUMULATORS -->
+  <article class="card">
+    <h3>3.3 Accumulators (Deductible & Out‑of‑Pocket)</h3>
+    <p>Accumulators track how much a member has paid toward their plan’s cost‑share requirements.</p>
+
+    <h4>Key Terms</h4>
+    <ul>
+      <li><strong>Deductible:</strong> Amount the member must pay before insurance contributes.</li>
+      <li><strong>Out‑of‑Pocket Maximum (OOP):</strong> Once reached, the plan pays 100%.</li>
+      <li><strong>Coinsurance:</strong> Percentage the member pays after deductible.</li>
+      <li><strong>Copay:</strong> Fixed amount per prescription.</li>
+    </ul>
+
+    <h4>Where to Find Accumulators</h4>
+    <ul>
+      <li><strong>Tredium → Benefit Balances</strong></li>
+      <li>Shows deductible remaining, OOP remaining, and amounts applied</li>
+    </ul>
+
+    <h4>Example</h4>
+    <div class="card">
+      <p><strong>Scenario:</strong> Member has a $500 deductible. They have paid $300 so far.</p>
+      <p><strong>Deductible remaining:</strong> $200</p>
+    </div>
+  </article>
+
+  <!-- 3.4 COST SHARE -->
+  <article class="card">
+    <h3>3.4 Understanding Cost Share</h3>
+    <p>Cost share is the amount the member pays for a medication based on their plan design.</p>
+
+    <h4>Cost Share Components</h4>
+    <ul>
+      <li>Copay</li>
+      <li>Coinsurance</li>
+      <li>Deductible</li>
+      <li>Tier level (generic, preferred brand, non‑preferred brand, specialty)</li>
+    </ul>
+
+    <h4>Where to Find Cost Share</h4>
+    <ul>
+      <li><strong>Tredium → Claim Information → Response Tab</strong></li>
+      <li>Shows copay, ingredient cost, dispensing fee, deductible applied, and OOP applied</li>
+    </ul>
+  </article>
+
+  <!-- 3.5 FORMULARY -->
+  <article class="card">
+    <h3>3.5 Formulary & Tiering</h3>
+    <p>The formulary determines which medications are covered and at what tier.</p>
+
+    <h4>Common Tier Structure</h4>
+    <ul>
+      <li><strong>Tier 1:</strong> Generic</li>
+      <li><strong>Tier 2:</strong> Preferred brand</li>
+      <li><strong>Tier 3:</strong> Non‑preferred brand</li>
+      <li><strong>Tier 4:</strong> Specialty</li>
+    </ul>
+
+    <h4>Where to Check Formulary</h4>
+    <ul>
+      <li>Client‑specific formulary documents</li>
+      <li>Tredium → Drug Management</li>
+      <li>Plan reference materials</li>
+    </ul>
+  </article>
+
+  <!-- QUIZ -->
+  <section class="quiz card">
+    <h3>Quick Quiz: Eligibility & Benefits</h3>
+
+    <div class="quiz-question" data-answer="Tredium">
+      <p><strong>1.</strong> Which system shows eligibility and benefit balances?</p>
+      <button class="quiz-option">MHK</button>
+      <button class="quiz-option">Advocate</button>
+      <button class="quiz-option">Tredium</button>
+    </div>
+
+    <div class="quiz-question" data-answer="Deductible">
+      <p><strong>2.</strong> Which cost‑share component must be paid before insurance contributes?</p>
+      <button class="quiz-option">Copay</button>
+      <button class="quiz-option">Deductible</button>
+      <button class="quiz-option">Coinsurance</button>
+    </div>
+
+    <div class="quiz-question" data-answer="Tier">
+      <p><strong>3.</strong> What determines whether a drug is generic, preferred brand, or specialty?</p>
+      <button class="quiz-option">Tier</button>
+      <button class="quiz-option">Pharmacy location</button>
+      <button class="quiz-option">Member age</button>
+    </div>
+
+    <button class="primary-btn">Check Answers</button>
+    <p class="quiz-result"></p>
+  </section>
+
+</section>
+<!-- ===================================== -->
+<!-- SECTION 4 — CLAIMS RESEARCH & TROUBLESHOOTING -->
+<!-- ===================================== -->
+
+<section id="module4" class="content-section">
+
+  <h2>Section 4: Claims Research & Troubleshooting</h2>
+  <p>This module teaches you how to research pharmacy claims, interpret claim responses, identify reject codes, and troubleshoot issues using Tredium and other systems.</p>
+
+  <!-- 4.1 CLAIM STATUSES -->
+  <article class="card">
+    <h3>4.1 Claim Statuses</h3>
+    <p>Understanding claim statuses helps you determine what happened during processing.</p>
+
+    <h4>Common Statuses</h4>
+    <ul>
+      <li><strong>Paid:</strong> Claim processed successfully.</li>
+      <li><strong>Rejected:</strong> Claim denied; requires troubleshooting.</li>
+      <li><strong>Reversed:</strong> Pharmacy canceled the claim.</li>
+      <li><strong>Duplicate:</strong> Same claim submitted twice.</li>
+    </ul>
+
+    <h4>Where to Find Status</h4>
+    <ul>
+      <li><strong>Tredium → Claim Information → Response Tab</strong></li>
+    </ul>
+  </article>
+
+  <!-- 4.2 DUR CODES -->
+  <article class="card">
+    <h3>4.2 DUR (Drug Utilization Review) Codes</h3>
+    <p>DUR codes alert the pharmacist to potential safety issues.</p>
+
+    <h4>Common DUR Codes</h4>
+    <ul>
+      <li><strong>DD:</strong> Drug–Drug interaction</li>
+      <li><strong>HD:</strong> High dose</li>
+      <li><strong>LD:</strong> Low dose</li>
+      <li><strong>PA:</strong> Prior authorization required</li>
+    </ul>
+
+    <h4>Where to View DUR</h4>
+    <ul>
+      <li><strong>Tredium → Claim Information → DUR Tab</strong></li>
+    </ul>
+  </article>
+
+  <!-- 4.3 REJECT CODES -->
+  <article class="card">
+    <h3>4.3 Reject Codes & How to Resolve Them</h3>
+    <p>Reject codes explain why a claim failed. Each code has a specific meaning and resolution path.</p>
+
+    <h4>Common Rejects</h4>
+    <ul>
+      <li><strong>70:</strong> Product/Service Not Covered</li>
+      <li><strong>75:</strong> Prior Authorization Required</li>
+      <li><strong>76:</strong> Plan Limitations Exceeded</li>
+      <li><strong>79:</strong> Refill Too Soon</li>
+      <li><strong>88:</strong> DUR Reject</li>
+    </ul>
+
+    <h4>Resolution Examples</h4>
+    <div class="card">
+      <p><strong>Reject 75:</strong> Submit PA through MHK or advise provider.</p>
+      <p><strong>Reject 79:</strong> Provide refill date and document in Advocate.</p>
+      <p><strong>Reject 70:</strong> Check formulary or alternative options.</p>
+    </div>
+  </article>
+
+  <!-- 4.4 COB -->
+  <article class="card">
+    <h3>4.4 Coordination of Benefits (COB)</h3>
+    <p>COB determines which insurance pays first when a member has multiple plans.</p>
+
+    <h4>Where to Check COB</h4>
+    <ul>
+      <li><strong>Tredium → COB Tab</strong></li>
+      <li>Shows primary vs secondary coverage</li>
+    </ul>
+
+    <h4>Common COB Issues</h4>
+    <ul>
+      <li>Incorrect primary plan</li>
+      <li>Outdated coordination information</li>
+      <li>Pharmacy billed wrong plan</li>
+    </ul>
+  </article>
+
+  <!-- 4.5 OVERRIDES -->
+  <article class="card">
+    <h3>4.5 Overrides</h3>
+    <p>Overrides allow claims to process when certain conditions are met.</p>
+
+    <h4>Common Overrides</h4>
+    <ul>
+      <li><strong>DAW:</strong> Dispense as written</li>
+      <li><strong>Emergency Fill:</strong> Temporary supply when PA is pending</li>
+      <li><strong>Vacation Override:</strong> Early fill for travel</li>
+    </ul>
+
+    <h4>When Overrides Apply</h4>
+    <ul>
+      <li>Member traveling</li>
+      <li>System outage</li>
+      <li>Provider unavailable</li>
+      <li>PA pending but urgent need</li>
+    </ul>
+  </article>
+
+  <!-- QUIZ -->
+  <section class="quiz card">
+    <h3>Quick Quiz: Claims Research & Troubleshooting</h3>
+
+    <div class="quiz-question" data-answer="Rejected">
+      <p><strong>1.</strong> Which claim status means the claim failed and needs troubleshooting?</p>
+      <button class="quiz-option">Paid</button>
+      <button class="quiz-option">Rejected</button>
+      <button class="quiz-option">Reversed</button>
+    </div>
+
+    <div class="quiz-question" data-answer="PA">
+      <p><strong>2.</strong> Which DUR code indicates a prior authorization is required?</p>
+      <button class="quiz-option">DD</button>
+      <button class="quiz-option">HD</button>
+      <button class="quiz-option">PA</button>
+    </div>
+
+    <div class="quiz-question" data-answer="79">
+      <p><strong>3.</strong> Which reject code means the member is trying to refill too early?</p>
+      <button class="quiz-option">70</button>
+      <button class="quiz-option">79</button>
+      <button class="quiz-option">88</button>
+    </div>
+
+    <button class="primary-btn">Check Answers</button>
+    <p class="quiz-result"></p>
+  </section>
+
+</section>
+<!-- ===================================== -->
+<!-- SECTION 5 — PRIOR AUTHORIZATIONS (PA) -->
+<!-- ===================================== -->
+
+<section id="module5" class="content-section">
+
+  <h2>Section 5: Prior Authorizations (PA)</h2>
+  <p>This module explains when prior authorizations are required, how to check PA status, how to submit a PA, and how to communicate PA requirements to members and providers.</p>
+
+  <!-- 5.1 WHAT IS A PA -->
+  <article class="card">
+    <h3>5.1 What Is a Prior Authorization?</h3>
+    <p>A prior authorization (PA) is a requirement from the insurance plan that the provider must obtain approval before the medication can be covered.</p>
+
+    <h4>Common Reasons for PA Requirements</h4>
+    <ul>
+      <li>High-cost medications</li>
+      <li>Specialty drugs</li>
+      <li>Non-preferred brand medications</li>
+      <li>Quantity limits exceeded</li>
+      <li>Step therapy requirements</li>
+    </ul>
+  </article>
+
+  <!-- 5.2 HOW TO CHECK PA STATUS -->
+  <article class="card">
+    <h3>5.2 How to Check PA Status</h3>
+
+    <h4>Where to Check</h4>
+    <ul>
+      <li><strong>MHK → Authorization Search</strong></li>
+      <li><strong>Tredium → Drug Management</strong></li>
+      <li>Client-specific PA portals (if applicable)</li>
+    </ul>
+
+    <h4>PA Status Types</h4>
+    <ul>
+      <li><strong>Approved:</strong> Claim should process.</li>
+      <li><strong>Denied:</strong> Member or provider may appeal.</li>
+      <li><strong>Pending:</strong> Waiting for clinical review.</li>
+      <li><strong>Not Found:</strong> No PA submitted yet.</li>
+    </ul>
+  </article>
+
+  <!-- 5.3 HOW TO SUBMIT A PA -->
+  <article class="card">
+    <h3>5.3 How to Submit a PA</h3>
+    <p>Most PAs are submitted through MHK or by fax using client-specific forms.</p>
+
+    <h4>PA Submission Workflow</h4>
+    <ol>
+      <li>Gather required clinical information from the provider.</li>
+      <li>Submit PA through <strong>MHK → New Authorization</strong>.</li>
+      <li>Attach clinical notes or supporting documents.</li>
+      <li>Confirm submission and provide tracking number.</li>
+      <li>Document the interaction in Advocate.</li>
+    </ol>
+
+    <h4>Information Needed for PA Submission</h4>
+    <ul>
+      <li>Diagnosis</li>
+      <li>Medication name and strength</li>
+      <li>Directions for use</li>
+      <li>Previous medications tried (step therapy)</li>
+      <li>Clinical justification</li>
+    </ul>
+  </article>
+
+  <!-- 5.4 HOW TO EXPLAIN PA TO MEMBERS -->
+  <article class="card">
+    <h3>5.4 How to Explain PA Requirements to Members</h3>
+
+    <h4>Member-Friendly Script</h4>
+    <div class="card">
+      <p><em>“Your plan requires approval from your provider before this medication can be covered. I can help you understand the next steps.”</em></p>
+    </div>
+
+    <h4>Key Points to Communicate</h4>
+    <ul>
+      <li>The provider must submit the PA.</li>
+      <li>The plan reviews the request based on clinical guidelines.</li>
+      <li>Approval is not guaranteed.</li>
+      <li>Processing time varies by plan.</li>
+    </ul>
+
+    <h4>Typical PA Timelines</h4>
+    <ul>
+      <li><strong>Standard:</strong> 3–5 business days</li>
+      <li><strong>Expedited:</strong> 24–72 hours</li>
+      <li><strong>Medicare:</strong> Follows CMS timelines</li>
+    </ul>
+  </article>
+
+  <!-- 5.5 APPEALS -->
+  <article class="card">
+    <h3>5.5 Appeals</h3>
+    <p>If a PA is denied, the member or provider may request an appeal.</p>
+
+    <h4>Appeal Workflow</h4>
+    <ol>
+      <li>Review denial reason in MHK.</li>
+      <li>Explain appeal rights to the member.</li>
+      <li>Provide appeal instructions or forms.</li>
+      <li>Document the interaction in Advocate.</li>
+    </ol>
+  </article>
+
+  <!-- QUIZ -->
+  <section class="quiz card">
+    <h3>Quick Quiz: Prior Authorizations</h3>
+
+    <div class="quiz-question" data-answer="High-cost medications">
+      <p><strong>1.</strong> Which of the following is a common reason a PA is required?</p>
+      <button class="quiz-option">Generic drugs</button>
+      <button class="quiz-option">High-cost medications</button>
+      <button class="quiz-option">Over-the-counter items</button>
+    </div>
+
+    <div class="quiz-question" data-answer="MHK">
+      <p><strong>2.</strong> Which system is used to check and submit PAs?</p>
+      <button class="quiz-option">Tredium</button>
+      <button class="quiz-option">Advocate</button>
+      <button class="quiz-option">MHK</button>
+    </div>
+
+    <div class="quiz-question" data-answer="Pending">
+      <p><strong>3.</strong> What status means the PA is still under review?</p>
+      <button class="quiz-option">Approved</button>
+      <button class="quiz-option">Denied</button>
+      <button class="quiz-option">Pending</button>
+    </div>
+
+    <button class="primary-btn">Check Answers</button>
+    <p class="quiz-result"></p>
+  </section>
+
+</section>
+<!-- ===================================== -->
+<!-- SECTION 6 — PHARMACY NETWORK & PRICING -->
+<!-- ===================================== -->
+
+<section id="module6" class="content-section">
+
+  <h2>Section 6: Pharmacy Network & Pricing</h2>
+  <p>This module explains how pharmacy networks work, how pricing is calculated, and why members may see different costs at different pharmacies.</p>
+
+  <!-- 6.1 NETWORK BASICS -->
+  <article class="card">
+    <h3>6.1 Pharmacy Network Basics</h3>
+    <p>Pharmacy networks determine which pharmacies members can use at the lowest cost.</p>
+
+    <h4>Network Types</h4>
+    <ul>
+      <li><strong>Retail:</strong> Local pharmacies (CVS, Walgreens, Walmart, etc.)</li>
+      <li><strong>Mail Order:</strong> 90‑day supplies shipped to the member</li>
+      <li><strong>Specialty:</strong> High‑cost or complex medications</li>
+    </ul>
+
+    <h4>In‑Network vs Out‑of‑Network</h4>
+    <ul>
+      <li><strong>In‑Network:</strong> Lower cost, contracted rates</li>
+      <li><strong>Out‑of‑Network:</strong> Higher cost, sometimes not covered</li>
+    </ul>
+
+    <h4>Where to Check Network Status</h4>
+    <ul>
+      <li><strong>Tredium → Pharmacy Lookup</strong></li>
+      <li>Shows network tier and contract status</li>
+    </ul>
+  </article>
+
+  <!-- 6.2 U&C PRICING -->
+  <article class="card">
+    <h3>6.2 Usual & Customary (U&C) Pricing</h3>
+    <p>U&C is the pharmacy’s cash price — the amount a member would pay without insurance.</p>
+
+    <h4>Key Points</h4>
+    <ul>
+      <li>Insurance will not pay more than the U&C price.</li>
+      <li>If U&C is lower than the copay, the member pays the U&C.</li>
+      <li>U&C varies by pharmacy.</li>
+    </ul>
+
+    <h4>Example</h4>
+    <div class="card">
+      <p><strong>Copay:</strong> $15</p>
+      <p><strong>U&C:</strong> $9</p>
+      <p><strong>Member Pays:</strong> $9 (because U&C is lower)</p>
+    </div>
+  </article>
+
+  <!-- 6.3 MAC PRICING -->
+  <article class="card">
+    <h3>6.3 Maximum Allowable Cost (MAC) Pricing</h3>
+    <p>MAC pricing is used for generics to control costs.</p>
+
+    <h4>Key Points</h4>
+    <ul>
+      <li>MAC sets the maximum amount the plan will pay for a generic drug.</li>
+      <li>If the pharmacy’s cost is higher than MAC, the member may pay more.</li>
+      <li>MAC varies by plan and drug.</li>
+    </ul>
+
+    <h4>Example</h4>
+    <div class="card">
+      <p><strong>MAC Price:</strong> $12</p>
+      <p><strong>Pharmacy Cost:</strong> $18</p>
+      <p><strong>Member Pays:</strong> $6 difference + copay</p>
+    </div>
+  </article>
+
+  <!-- 6.4 DAW CODES -->
+  <article class="card">
+    <h3>6.4 DAW (Dispense As Written) Codes</h3>
+    <p>DAW codes affect pricing and determine whether a generic substitution is allowed.</p>
+
+    <h4>Common DAW Codes</h4>
+    <ul>
+      <li><strong>DAW 0:</strong> No product selection indicated</li>
+      <li><strong>DAW 1:</strong> Provider requests brand</li>
+      <li><strong>DAW 2:</strong> Member requests brand</li>
+    </ul>
+
+    <h4>Impact on Pricing</h4>
+    <ul>
+      <li>DAW 1 often requires brand copay or PA</li>
+      <li>DAW 2 may increase cost significantly</li>
+      <li>DAW 0 usually allows generic substitution</li>
+    </ul>
+  </article>
+
+  <!-- 6.5 WHY PRICES DIFFER -->
+  <article class="card">
+    <h3>6.5 Why Prices Differ Between Pharmacies</h3>
+
+    <h4>Factors That Affect Pricing</h4>
+    <ul>
+      <li>Pharmacy contract rates</li>
+      <li>U&C differences</li>
+      <li>MAC pricing variations</li>
+      <li>DAW codes</li>
+      <li>Pharmacy fees</li>
+    </ul>
+
+    <h4>How to Explain This to Members</h4>
+    <div class="card">
+      <p><em>“Pharmacies set their own cash prices, and your plan pays based on contracted rates. That’s why costs can vary from one pharmacy to another.”</em></p>
+    </div>
+  </article>
+
+  <!-- QUIZ -->
+  <section class="quiz card">
+    <h3>Quick Quiz: Pharmacy Network & Pricing</h3>
+
+    <div class="quiz-question" data-answer="In-network">
+      <p><strong>1.</strong> Which type of pharmacy offers the lowest contracted rates?</p>
+      <button class="quiz-option">Out-of-network</button>
+      <button class="quiz-option">In-network</button>
+      <button class="quiz-option">Specialty only</button>
+    </div>
+
+    <div class="quiz-question" data-answer="U&C">
+      <p><strong>2.</strong> Which price represents the pharmacy’s cash price?</p>
+      <button class="quiz-option">MAC</button>
+      <button class="quiz-option">U&C</button>
+      <button class="quiz-option">DAW</button>
+    </div>
+
+    <div class="quiz-question" data-answer="DAW 1">
+      <p><strong>3.</strong> Which DAW code means the provider requires brand?</p>
+      <button class="quiz-option">DAW 0</button>
+      <button class="quiz-option">DAW 1</button>
+      <button class="quiz-option">DAW 2</button>
+    </div>
+
+    <button class="primary-btn">Check Answers</button>
+    <p class="quiz-result"></p>
+  </section>
+
+</section>
+<!-- ===================================== -->
+<!-- SECTION 7 — MEDICATION SAFETY & QUALITY -->
+<!-- ===================================== -->
+
+<section id="module7" class="content-section">
+
+  <h2>Section 7: Medication Safety & Quality</h2>
+  <p>This module focuses on medication safety, DUR alerts, high‑risk medications, and best practices for preventing errors and supporting members with accurate, safety‑focused information.</p>
+
+  <!-- 7.1 DUR ALERTS -->
+  <article class="card">
+    <h3>7.1 DUR Alerts</h3>
+    <p>DUR (Drug Utilization Review) alerts help identify potential safety issues before a medication is dispensed.</p>
+
+    <h4>Common DUR Alerts</h4>
+    <ul>
+      <li><strong>DD:</strong> Drug–Drug interaction</li>
+      <li><strong>HD:</strong> High dose</li>
+      <li><strong>LD:</strong> Low dose</li>
+      <li><strong>PA:</strong> Prior authorization required</li>
+      <li><strong>ER:</strong> Early refill concern</li>
+    </ul>
+
+    <h4>Where to View DUR Alerts</h4>
+    <ul>
+      <li><strong>Tredium → Claim Information → DUR Tab</strong></li>
+    </ul>
+  </article>
+
+  <!-- 7.2 HIGH-RISK MEDICATIONS -->
+  <article class="card">
+    <h3>7.2 High‑Risk Medications</h3>
+    <p>Some medications require extra caution due to their potency, side effects, or potential for misuse.</p>
+
+    <h4>Examples of High‑Risk Medications</h4>
+    <ul>
+      <li>Opioids</li>
+      <li>Anticoagulants (blood thinners)</li>
+      <li>Insulin</li>
+      <li>Immunosuppressants</li>
+      <li>Specialty medications</li>
+    </ul>
+
+    <h4>Safety Considerations</h4>
+    <ul>
+      <li>Verify correct dosage and directions</li>
+      <li>Check for interactions</li>
+      <li>Ensure PA or step therapy requirements are met</li>
+      <li>Document all safety concerns in Advocate</li>
+    </ul>
+  </article>
+
+  <!-- 7.3 ERROR PREVENTION -->
+  <article class="card">
+    <h3>7.3 Error Prevention</h3>
+    <p>Preventing medication errors is a shared responsibility between the pharmacy, provider, and support team.</p>
+
+    <h4>Common Error Types</h4>
+    <ul>
+      <li>Wrong medication</li>
+      <li>Incorrect dosage</li>
+      <li>Duplicate therapy</li>
+      <li>Allergy conflicts</li>
+      <li>Incorrect quantity</li>
+    </ul>
+
+    <h4>How PCSRs Help Prevent Errors</h4>
+    <ul>
+      <li>Review DUR alerts carefully</li>
+      <li>Confirm medication details with members</li>
+      <li>Escalate safety concerns to pharmacists</li>
+      <li>Document accurately in Advocate</li>
+    </ul>
+  </article>
+
+  <!-- 7.4 COUNSELING POINTS -->
+  <article class="card">
+    <h3>7.4 Counseling Points</h3>
+    <p>While PCSRs do not provide clinical advice, they can reinforce key safety messages.</p>
+
+    <h4>General Counseling Reinforcement</h4>
+    <ul>
+      <li>Take medication exactly as prescribed</li>
+      <li>Do not stop medication without provider guidance</li>
+      <li>Report side effects to provider</li>
+      <li>Store medication safely</li>
+    </ul>
+
+    <h4>Member-Friendly Script</h4>
+    <div class="card">
+      <p><em>“For your safety, please follow the directions on your prescription label and contact your provider if you notice anything unusual.”</em></p>
+    </div>
+  </article>
+
+  <!-- 7.5 QUALITY STANDARDS -->
+  <article class="card">
+    <h3>7.5 Quality Standards</h3>
+    <p>Quality standards ensure members receive safe, effective, and timely care.</p>
+
+    <h4>Key Standards</h4>
+    <ul>
+      <li>Accurate documentation</li>
+      <li>Timely follow‑up</li>
+      <li>Clear communication</li>
+      <li>Escalation when needed</li>
+    </ul>
+  </article>
+
+  <!-- QUIZ -->
+  <section class="quiz card">
+    <h3>Quick Quiz: Medication Safety & Quality</h3>
+
+    <div class="quiz-question" data-answer="DD">
+      <p><strong>1.</strong> Which DUR code indicates a drug–drug interaction?</p>
+      <button class="quiz-option">HD</button>
+      <button class="quiz-option">DD</button>
+      <button class="quiz-option">ER</button>
+    </div>
+
+    <div class="quiz-question" data-answer="Opioids">
+      <p><strong>2.</strong> Which of the following is considered a high‑risk medication?</p>
+      <button class="quiz-option">Antibiotics</button>
+      <button class="quiz-option">Opioids</button>
+      <button class="quiz-option">Antacids</button>
+    </div>
+
+    <div class="quiz-question" data-answer="Escalate to a pharmacist">
+      <p><strong>3.</strong> What should a PCSR do if they see a serious DUR alert?</p>
+      <button class="quiz-option">Ignore it</button>
+      <button class="quiz-option">Escalate to a pharmacist</button>
+      <button class="quiz-option">Tell the member to guess</button>
+    </div>
+
+    <button class="primary-btn">Check Answers</button>
+    <p class="quiz-result"></p>
+  </section>
+
+</section>
+<!-- ===================================== -->
+<!-- SECTION 8 — SPECIALTY MEDICATIONS & SUPPORT -->
+<!-- ===================================== -->
+
+<section id="module8" class="content-section">
+
+  <h2>Section 8: Specialty Medications & Support</h2>
+  <p>Specialty medications require special handling, additional approvals, and high‑touch support. This module teaches you how to assist members who rely on these complex therapies.</p>
+
+  <!-- 8.1 WHAT ARE SPECIALTY MEDICATIONS -->
+  <article class="card">
+    <h3>8.1 What Are Specialty Medications?</h3>
+    <p>Specialty medications are high‑cost, high‑complexity drugs used to treat chronic or rare conditions.</p>
+
+    <h4>Common Specialty Categories</h4>
+    <ul>
+      <li>Oncology</li>
+      <li>Rheumatology</li>
+      <li>Multiple sclerosis</li>
+      <li>HIV</li>
+      <li>Hepatitis C</li>
+      <li>Immunology</li>
+    </ul>
+
+    <h4>Key Characteristics</h4>
+    <ul>
+      <li>High cost</li>
+      <li>Strict storage requirements</li>
+      <li>Frequent monitoring</li>
+      <li>Often require PA or step therapy</li>
+    </ul>
+  </article>
+
+  <!-- 8.2 SPECIALTY PHARMACY WORKFLOW -->
+  <article class="card">
+    <h3>8.2 Specialty Pharmacy Workflow</h3>
+    <p>Specialty pharmacies provide high‑touch support for complex medications.</p>
+
+    <h4>Workflow Steps</h4>
+    <ol>
+      <li>Prescription received by specialty pharmacy</li>
+      <li>Benefits investigation (BI)</li>
+      <li>Prior authorization review</li>
+      <li>Copay assistance screening</li>
+      <li>Clinical onboarding call</li>
+      <li>Shipment scheduling</li>
+    </ol>
+
+    <h4>Where to Check Specialty Status</h4>
+    <ul>
+      <li><strong>Tredium → Specialty Notes</strong></li>
+      <li><strong>MHK → Authorization Details</strong></li>
+    </ul>
+  </article>
+
+  <!-- 8.3 COLD-CHAIN HANDLING -->
+  <article class="card">
+    <h3>8.3 Cold‑Chain Handling</h3>
+    <p>Many specialty medications require refrigeration or temperature‑controlled shipping.</p>
+
+    <h4>Key Points</h4>
+    <ul>
+      <li>Must remain within a specific temperature range</li>
+      <li>Shipped with ice packs or temperature monitors</li>
+      <li>Missed deliveries may require replacement</li>
+      <li>Members must be home to receive shipment</li>
+    </ul>
+
+    <h4>Member-Friendly Script</h4>
+    <div class="card">
+      <p><em>“This medication requires temperature‑controlled shipping, so it’s important that someone is available to receive the package.”</em></p>
+    </div>
+  </article>
+
+  <!-- 8.4 COPAY ASSISTANCE -->
+  <article class="card">
+    <h3>8.4 Copay Assistance Programs</h3>
+    <p>Specialty medications often have high out‑of‑pocket costs. Many manufacturers offer financial assistance.</p>
+
+    <h4>Types of Assistance</h4>
+    <ul>
+      <li>Manufacturer copay cards</li>
+      <li>Patient assistance programs (PAP)</li>
+      <li>Foundation grants</li>
+    </ul>
+
+    <h4>How PCSRs Support Members</h4>
+    <ul>
+      <li>Provide program contact information</li>
+      <li>Explain eligibility requirements</li>
+      <li>Document assistance in Advocate</li>
+    </ul>
+  </article>
+
+  <!-- 8.5 SPECIALTY PA REQUIREMENTS -->
+  <article class="card">
+    <h3>8.5 Specialty PA Requirements</h3>
+    <p>Specialty medications almost always require prior authorization.</p>
+
+    <h4>Common Requirements</h4>
+    <ul>
+      <li>Diagnosis confirmation</li>
+      <li>Lab results</li>
+      <li>Previous therapies tried</li>
+      <li>Clinical justification</li>
+    </ul>
+
+    <h4>Where to Check PA Status</h4>
+    <ul>
+      <li><strong>MHK → Authorization Search</strong></li>
+      <li><strong>Tredium → Drug Management</strong></li>
+    </ul>
+  </article>
+
+  <!-- QUIZ -->
+  <section class="quiz card">
+    <h3>Quick Quiz: Specialty Medications & Support</h3>
+
+    <div class="quiz-question" data-answer="High cost and complex handling">
+      <p><strong>1.</strong> What makes a medication “specialty”?</p>
+      <button class="quiz-option">Low cost and easy to store</button>
+      <button class="quiz-option">High cost and complex handling</button>
+      <button class="quiz-option">Over-the-counter availability</button>
+    </div>
+
+    <div class="quiz-question" data-answer="Cold-chain handling">
+      <p><strong>2.</strong> What is required for medications that must stay refrigerated?</p>
+      <button class="quiz-option">Cold-chain handling</button>
+      <button class="quiz-option">Mail order only</button>
+      <button class="quiz-option">No special requirements</button>
+    </div>
+
+    <div class="quiz-question" data-answer="Copay assistance programs">
+      <p><strong>3.</strong> What can help reduce high out-of-pocket costs for specialty meds?</p>
+      <button class="quiz-option">Generic substitution</button>
+      <button class="quiz-option">Copay assistance programs</button>
+      <button class="quiz-option">Changing pharmacies</button>
+    </div>
+
+    <button class="primary-btn">Check Answers</button>
+    <p class="quiz-result"></p>
+  </section>
+
+</section>
+<!-- ===================================== -->
+<!-- SECTION 9 — PHARMACY OPERATIONS & MEMBER SUPPORT -->
+<!-- ===================================== -->
+
+<section id="module9" class="content-section">
+
+  <h2>Section 9: Pharmacy Operations & Member Support</h2>
+  <p>This module covers the operational workflows that PCSRs handle daily, including refills, transfers, overrides, and communication with pharmacies and members.</p>
+
+  <!-- 9.1 REFILLS -->
+  <article class="card">
+    <h3>9.1 Refill Requests</h3>
+    <p>Members often call to request refills or ask why a refill is not available.</p>
+
+    <h4>Common Refill Issues</h4>
+    <ul>
+      <li>No refills remaining</li>
+      <li>Refill too soon</li>
+      <li>Quantity limits</li>
+      <li>Provider discontinued medication</li>
+    </ul>
+
+    <h4>How to Support Members</h4>
+    <ul>
+      <li>Check claim history in Tredium</li>
+      <li>Verify refill dates and quantity</li>
+      <li>Explain refill-too-soon logic</li>
+      <li>Advise member to contact provider if no refills remain</li>
+    </ul>
+  </article>
+
+  <!-- 9.2 TRANSFERS -->
+  <article class="card">
+    <h3>9.2 Prescription Transfers</h3>
+    <p>Members may request to move prescriptions between pharmacies.</p>
+
+    <h4>Transfer Workflow</h4>
+    <ol>
+      <li>Member chooses new pharmacy</li>
+      <li>New pharmacy contacts old pharmacy</li>
+      <li>Prescription is transferred electronically or by phone</li>
+      <li>Claim is reprocessed at new pharmacy</li>
+    </ol>
+
+    <h4>Key Points</h4>
+    <ul>
+      <li>PCSRs cannot transfer prescriptions directly</li>
+      <li>Controlled substances may have restrictions</li>
+      <li>Some states limit transfer frequency</li>
+    </ul>
+  </article>
+
+  <!-- 9.3 OVERRIDES -->
+  <article class="card">
+    <h3>9.3 Overrides</h3>
+    <p>Overrides allow claims to process when certain conditions are met.</p>
+
+    <h4>Common Overrides</h4>
+    <ul>
+      <li><strong>Vacation Override:</strong> Early fill for travel</li>
+      <li><strong>Emergency Fill:</strong> Temporary supply when PA is pending</li>
+      <li><strong>Lost Medication Override:</strong> Case-by-case approval</li>
+    </ul>
+
+    <h4>How to Support Members</h4>
+    <ul>
+      <li>Check plan rules in Tredium</li>
+      <li>Explain override eligibility</li>
+      <li>Document override requests in Advocate</li>
+    </ul>
+  </article>
+
+  <!-- 9.4 PHARMACY COMMUNICATION -->
+  <article class="card">
+    <h3>9.4 Communicating with Pharmacies</h3>
+    <p>PCSRs often need to contact pharmacies to clarify claim issues or verify information.</p>
+
+    <h4>Reasons to Contact a Pharmacy</h4>
+    <ul>
+      <li>Verify claim submission</li>
+      <li>Confirm NDC used</li>
+      <li>Check stock availability</li>
+      <li>Clarify DAW codes</li>
+    </ul>
+
+    <h4>Professional Script</h4>
+    <div class="card">
+      <p><em>“Hi, this is Chandra calling from Rightway Pharmacy Support. I’m calling to verify a claim for one of our members.”</em></p>
+    </div>
+  </article>
+
+  <!-- 9.5 MEMBER SUPPORT -->
+  <article class="card">
+    <h3>9.5 Member Support Best Practices</h3>
+    <p>Clear communication and accurate information help members feel supported and confident.</p>
+
+    <h4>Best Practices</h4>
+    <ul>
+      <li>Use empathy and active listening</li>
+      <li>Provide clear next steps</li>
+      <li>Avoid jargon</li>
+      <li>Document all interactions in Advocate</li>
+    </ul>
+  </article>
+
+  <!-- QUIZ -->
+  <section class="quiz card">
+    <h3>Quick Quiz: Pharmacy Operations & Member Support</h3>
+
+    <div class="quiz-question" data-answer="New pharmacy contacts old pharmacy">
+      <p><strong>1.</strong> How is a prescription transfer initiated?</p>
+      <button class="quiz-option">Member calls the old pharmacy</button>
+      <button class="quiz-option">PCSR transfers it directly</button>
+      <button class="quiz-option">New pharmacy contacts old pharmacy</button>
+    </div>
+
+    <div class="quiz-question" data-answer="Vacation override">
+      <p><strong>2.</strong> Which override allows an early fill for travel?</p>
+      <button class="quiz-option">Emergency fill</button>
+      <button class="quiz-option">Vacation override</button>
+      <button class="quiz-option">Lost medication override</button>
+    </div>
+
+    <div class="quiz-question" data-answer="Verify claim submission">
+      <p><strong>3.</strong> What is a common reason to call a pharmacy?</p>
+      <button class="quiz-option">To request a PA</button>
+      <button class="quiz-option">Verify claim submission</button>
+      <button class="quiz-option">Change the member’s copay</button>
+    </div>
+
+    <button class="primary-btn">Check Answers</button>
+    <p class="quiz-result"></p>
+  </section>
+
+</section>
+<!-- ===================================== -->
+<!-- SECTION 10 — ADVANCED SCENARIOS & CALL HANDLING -->
+<!-- ===================================== -->
+
+<section id="module10" class="content-section">
+
+  <h2>Section 10: Advanced Scenarios & Call Handling</h2>
+  <p>This module prepares PCSRs to handle complex, multi‑layered situations using critical thinking, system navigation, and confident communication.</p>
+
+  <!-- 10.1 MULTI-SYSTEM RESEARCH -->
+  <article class="card">
+    <h3>10.1 Multi‑System Research</h3>
+    <p>Advanced calls often require checking multiple systems to piece together the full story.</p>
+
+    <h4>Common System Combinations</h4>
+    <ul>
+      <li><strong>Tredium + MHK:</strong> Claim + PA status</li>
+      <li><strong>Tredium + Advocate:</strong> Claim + documentation history</li>
+      <li><strong>MHK + Provider Call:</strong> PA + clinical clarification</li>
+    </ul>
+
+    <h4>Best Practices</h4>
+    <ul>
+      <li>Start with Tredium to understand the claim</li>
+      <li>Check MHK if PA or step therapy is involved</li>
+      <li>Review Advocate for previous notes</li>
+      <li>Document your findings clearly</li>
+    </ul>
+  </article>
+
+  <!-- 10.2 COMPLEX MEMBER SITUATIONS -->
+  <article class="card">
+    <h3>10.2 Complex Member Situations</h3>
+    <p>Some calls require deeper investigation and careful communication.</p>
+
+    <h4>Examples</h4>
+    <ul>
+      <li>Conflicting PA information</li>
+      <li>Multiple pharmacies billing different NDCs</li>
+      <li>High‑cost specialty medication delays</li>
+      <li>COB issues causing unexpected denials</li>
+    </ul>
+
+    <h4>How to Approach These Calls</h4>
+    <ul>
+      <li>Stay calm and confident</li>
+      <li>Gather all details before explaining anything</li>
+      <li>Use system notes to reconstruct the timeline</li>
+      <li>Escalate when safety or compliance is involved</li>
+    </ul>
+  </article>
+
+  <!-- 10.3 ESCALATION LOGIC -->
+  <article class="card">
+    <h3>10.3 Escalation Logic</h3>
+    <p>Knowing when to escalate is essential for safety, accuracy, and member trust.</p>
+
+    <h4>Escalate When:</h4>
+    <ul>
+      <li>There is a potential safety issue</li>
+      <li>A DUR alert requires pharmacist review</li>
+      <li>A provider or pharmacy requests clinical input</li>
+      <li>A member is in crisis or medically urgent situation</li>
+      <li>System errors prevent claim processing</li>
+    </ul>
+
+    <h4>Escalation Script</h4>
+    <div class="card">
+      <p><em>“To make sure you receive the safest and most accurate support, I’m going to escalate this to our clinical team.”</em></p>
+    </div>
+  </article>
+
+  <!-- 10.4 SCENARIO PRACTICE -->
+  <article class="card">
+    <h3>10.4 Scenario Practice</h3>
+
+    <h4>Scenario 1: Conflicting PA Information</h4>
+    <p><strong>Situation:</strong> Member says PA was approved, but claim still rejects.</p>
+    <p><strong>Steps:</strong></p>
+    <ul>
+      <li>Check MHK for approval dates</li>
+      <li>Verify NDC used by pharmacy</li>
+      <li>Confirm PA matches drug strength and quantity</li>
+      <li>Advise pharmacy to resubmit claim</li>
+    </ul>
+
+    <h4>Scenario 2: Refill Too Soon + Lost Medication</h4>
+    <p><strong>Steps:</strong></p>
+    <ul>
+      <li>Check last fill date in Tredium</li>
+      <li>Confirm plan rules for lost medication overrides</li>
+      <li>Explain next steps to member</li>
+      <li>Document in Advocate</li>
+    </ul>
+
+    <h4>Scenario 3: High‑Cost Specialty Delay</h4>
+    <p><strong>Steps:</strong></p>
+    <ul>
+      <li>Check PA status</li>
+      <li>Check specialty pharmacy notes</li>
+      <li>Verify shipping schedule</li>
+      <li>Provide clear timeline to member</li>
+    </ul>
+  </article>
+
+  <!-- QUIZ -->
+  <section class="quiz card">
+    <h3>Quick Quiz: Advanced Scenarios & Call Handling</h3>
+
+    <div class="quiz-question" data-answer="Tredium + MHK">
+      <p><strong>1.</strong> Which system combination is best for checking claim and PA status?</p>
+      <button class="quiz-option">Advocate + Pharmacy</button>
+      <button class="quiz-option">Tredium + MHK</button>
+      <button class="quiz-option">MHK + Member Portal</button>
+    </div>
+
+    <div class="quiz-question" data-answer="Escalate">
+      <p><strong>2.</strong> What should you do if a DUR alert indicates a serious safety issue?</p>
+      <button class="quiz-option">Ignore it</button>
+      <button class="quiz-option">Escalate</button>
+      <button class="quiz-option">Tell the member to wait</button>
+    </div>
+
+    <div class="quiz-question" data-answer="Verify NDC and resubmit">
+      <p><strong>3.</strong> If a PA is approved but the claim still rejects, what is the first step?</p>
+      <button class="quiz-option">Close the call</button>
+      <button class="quiz-option">Verify NDC and resubmit</button>
+      <button class="quiz-option">Tell the member to call back</button>
+    </div>
+
+    <button class="primary-btn">Check Answers</button>
+    <p class="quiz-result"></p>
+  </section>
+
+</section>
+<!-- ===================================== -->
+<!-- SECTION 11 — FINAL ASSESSMENT & CERTIFICATION -->
+<!-- ===================================== -->
+
+<section id="finalExam" class="content-section">
+
+
+  <h2>Section 11: Final Assessment & Certification</h2>
+  <p>This final exam evaluates your knowledge across all modules. You must score 80% or higher to earn your PCSR Training Certification.</p>
+
+  <section class="quiz card">
+    <h3>Final Assessment</h3>
+
+    <!-- Q1 -->
+    <div class="quiz-question" data-answer="Full name, DOB, address">
+      <p><strong>1.</strong> What three elements are required for HIPAA verification?</p>
+      <button class="quiz-option">Name, pharmacy, medication</button>
+      <button class="quiz-option">Full name, DOB, address</button>
+      <button class="quiz-option">Phone number, ZIP code, plan name</button>
+    </div>
+
+    <!-- Q2 -->
+    <div class="quiz-question" data-answer="Empathy">
+      <p><strong>2.</strong> Which skill helps build trust and calm frustrated members?</p>
+      <button class="quiz-option">Escalation</button>
+      <button class="quiz-option">Empathy</button>
+      <button class="quiz-option">Silence</button>
+    </div>
+
+    <!-- Q3 -->
+    <div class="quiz-question" data-answer="Tredium">
+      <p><strong>3.</strong> Which system shows eligibility and benefit balances?</p>
+      <button class="quiz-option">Advocate</button>
+      <button class="quiz-option">MHK</button>
+      <button class="quiz-option">Tredium</button>
+    </div>
+
+    <!-- Q4 -->
+    <div class="quiz-question" data-answer="Deductible">
+      <p><strong>4.</strong> Which cost-share component must be paid before insurance contributes?</p>
+      <button class="quiz-option">Copay</button>
+      <button class="quiz-option">Deductible</button>
+      <button class="quiz-option">Coinsurance</button>
+    </div>
+
+    <!-- Q5 -->
+    <div class="quiz-question" data-answer="Tier">
+      <p><strong>5.</strong> What determines whether a drug is generic, preferred brand, or specialty?</p>
+      <button class="quiz-option">Tier</button>
+      <button class="quiz-option">Pharmacy location</button>
+      <button class="quiz-option">Member age</button>
+    </div>
+
+    <!-- Q6 -->
+    <div class="quiz-question" data-answer="Rejected">
+      <p><strong>6.</strong> Which claim status means the claim failed and needs troubleshooting?</p>
+      <button class="quiz-option">Paid</button>
+      <button class="quiz-option">Rejected</button>
+      <button class="quiz-option">Reversed</button>
+    </div>
+
+    <!-- Q7 -->
+    <div class="quiz-question" data-answer="PA">
+      <p><strong>7.</strong> Which DUR code indicates a prior authorization is required?</p>
+      <button class="quiz-option">DD</button>
+      <button class="quiz-option">HD</button>
+      <button class="quiz-option">PA</button>
+    </div>
+
+    <!-- Q8 -->
+    <div class="quiz-question" data-answer="79">
+      <p><strong>8.</strong> Which reject code means the member is trying to refill too early?</p>
+      <button class="quiz-option">70</button>
+      <button class="quiz-option">79</button>
+      <button class="quiz-option">88</button>
+    </div>
+
+    <!-- Q9 -->
+    <div class="quiz-question" data-answer="High-cost medications">
+      <p><strong>9.</strong> Which of the following is a common reason a PA is required?</p>
+      <button class="quiz-option">Generic drugs</button>
+      <button class="quiz-option">High-cost medications</button>
+      <button class="quiz-option">OTC items</button>
+    </div>
+
+    <!-- Q10 -->
+    <div class="quiz-question" data-answer="MHK">
+      <p><strong>10.</strong> Which system is used to check and submit PAs?</p>
+      <button class="quiz-option">Tredium</button>
+      <button class="quiz-option">Advocate</button>
+      <button class="quiz-option">MHK</button>
+    </div>
+
+    <!-- Q11 -->
+    <div class="quiz-question" data-answer="In-network">
+      <p><strong>11.</strong> Which type of pharmacy offers the lowest contracted rates?</p>
+      <button class="quiz-option">Out-of-network</button>
+      <button class="quiz-option">In-network</button>
+      <button class="quiz-option">Specialty only</button>
+    </div>
+
+    <!-- Q12 -->
+    <div class="quiz-question" data-answer="U&C">
+      <p><strong>12.</strong> Which price represents the pharmacy’s cash price?</p>
+      <button class="quiz-option">MAC</button>
+      <button class="quiz-option">U&C</button>
+      <button class="quiz-option">DAW</button>
+    </div>
+
+    <!-- Q13 -->
+    <div class="quiz-question" data-answer="DAW 1">
+      <p><strong>13.</strong> Which DAW code means the provider requires brand?</p>
+      <button class="quiz-option">DAW 0</button>
+      <button class="quiz-option">DAW 1</button>
+      <button class="quiz-option">DAW 2</button>
+    </div>
+
+    <!-- Q14 -->
+    <div class="quiz-question" data-answer="DD">
+      <p><strong>14.</strong> Which DUR code indicates a drug–drug interaction?</p>
+      <button class="quiz-option">HD</button>
+      <button class="quiz-option">DD</button>
+      <button class="quiz-option">ER</button>
+    </div>
+
+    <!-- Q15 -->
+    <div class="quiz-question" data-answer="Opioids">
+      <p><strong>15.</strong> Which of the following is considered a high‑risk medication?</p>
+      <button class="quiz-option">Antacids</button>
+      <button class="quiz-option">Opioids</button>
+      <button class="quiz-option">Antibiotics</button>
+    </div>
+
+    <!-- Q16 -->
+    <div class="quiz-question" data-answer="Cold-chain handling">
+      <p><strong>16.</strong> What is required for medications that must stay refrigerated?</p>
+      <button class="quiz-option">Mail order only</button>
+      <button class="quiz-option">Cold-chain handling</button>
+      <button class="quiz-option">No special requirements</button>
+    </div>
+
+    <!-- Q17 -->
+    <div class="quiz-question" data-answer="New pharmacy contacts old pharmacy">
+      <p><strong>17.</strong> How is a prescription transfer initiated?</p>
+      <button class="quiz-option">Member calls the old pharmacy</button>
+      <button class="quiz-option">PCSR transfers it directly</button>
+      <button class="quiz-option">New pharmacy contacts old pharmacy</button>
+    </div>
+
+    <!-- Q18 -->
+    <div class="quiz-question" data-answer="Escalate">
+      <p><strong>18.</strong> What should you do if a DUR alert indicates a serious safety issue?</p>
+      <button class="quiz-option">Ignore it</button>
+      <button class="quiz-option">Escalate</button>
+      <button class="quiz-option">Tell the member to wait</button>
+    </div>
+
+    <!-- Q19 -->
+    <div class="quiz-question" data-answer="Verify NDC and resubmit">
+      <p><strong>19.</strong> If a PA is approved but the claim still rejects, what is the first step?</p>
+      <button class="quiz-option">Close the call</button>
+      <button class="quiz-option">Verify NDC and resubmit</button>
+      <button class="quiz-option">Tell the member to call back</button>
+    </div>
+
+    <!-- Q20 -->
+    <div class="quiz-question" data-answer="Document in Advocate">
+      <p><strong>20.</strong> What should you always do after resolving a member issue?</p>
+      <button class="quiz-option">Nothing</button>
+      <button class="quiz-option">Document in Advocate</button>
+      <button class="quiz-option">Delete the call notes</button>
+    </div>
+
+    <button class="primary-btn">Submit Final Exam</button>
+    <p class="quiz-result"></p>
+
+    <button id="viewCertificateBtn" class="primary-btn" style="display:none;">
+  View Certificate
+</button>
+
+ <div class="certificate-message" style="display:none;">
+      <h3>🎉 Congratulations!</h3>
+      <p>You passed the PCSR Training Final Assessment and are now officially certified.</p>
+    </div>
+
+  </section>
+
+
+</main>
+</div>
+
+<footer>
+    <p>Chandra M Harris © 2026</p>
+  </footer>
+
+    <button id="backToTop">↑ Top</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
