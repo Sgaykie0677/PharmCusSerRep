@@ -1,19 +1,18 @@
-/* === PCSR TRAINING PORTAL - MAIN JAVASCRIPT === */
+/* === PCSR TRAINING PORTAL - FINAL PRODUCTION SCRIPT === */
 
 document.addEventListener("DOMContentLoaded", () => {
+    // 1. SELECT UI ELEMENTS
     const finalSubmitBtn = document.querySelector("#finalExam .primary-btn");
     const quizResult = document.querySelector("#finalExam .quiz-result");
     const viewCertBtn = document.getElementById("viewCertificateBtn");
     const certMessage = document.querySelector(".certificate-message");
 
-    // 1. FINAL EXAM SUBMISSION LOGIC
+    // 2. FINAL EXAM SCORING & BUTTON REVEAL
     if (finalSubmitBtn) {
         finalSubmitBtn.addEventListener("click", () => {
             let correctCount = 0;
-            const totalQuestions = 20;
-
-            // Select all quiz questions within the Final Exam section
             const questions = document.querySelectorAll("#finalExam .quiz-question");
+            const totalQuestions = questions.length;
 
             questions.forEach((q) => {
                 const selected = q.querySelector(".quiz-option.selected");
@@ -24,46 +23,53 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
 
-            // Display the score result to the user
-            quizResult.textContent = `You got ${correctCount} out of ${totalQuestions} correct!`;
-            quizResult.style.display = "block";
+            // Update result text on screen
+            if (quizResult) {
+                quizResult.textContent = `You got ${correctCount} out of ${totalQuestions} correct!`;
+                quizResult.style.display = "block";
+            }
 
-            // 2. THE "VIEW CERTIFICATE" TRIGGER
-            // Passing score is set to 16/20 (80%)
+            // Logic to show "View Certificate" (Passing score: 16/20)
             if (correctCount >= 16) {
-                // Reveal the hidden HTML elements already in your code
-                viewCertBtn.style.display = "block";
-                certMessage.style.display = "block";
+                if (viewCertBtn) viewCertBtn.style.display = "block";
+                if (certMessage) certMessage.style.display = "block";
                 
-                // Smoothly scroll down so the manager sees the certificate button appear
+                // Glide down to the reward
                 viewCertBtn.scrollIntoView({ behavior: "smooth" });
             } else {
-                alert(`Score: ${correctCount}/${totalQuestions}. You need at least 16 correct to earn your certificate. Please review and try again!`);
-                viewCertBtn.style.display = "none";
-                certMessage.style.display = "none";
+                alert(`Score: ${correctCount}/${totalQuestions}. You need 16 to pass. Keep trying!`);
+                if (viewCertBtn) viewCertBtn.style.display = "none";
+                if (certMessage) certMessage.style.display = "none";
             }
         });
     }
 
-    // 3. CERTIFICATE BUTTON INTERACTION
+    // 3. CERTIFICATE ACTION (PROMPT FOR NAME)
     if (viewCertBtn) {
         viewCertBtn.addEventListener("click", () => {
             const userName = prompt("Please enter your full name for the certificate:");
-            
             if (userName) {
-                alert(`Success!\n\nGenerating PCSR Certification for: ${userName}\n\n(This would link to your PDF template in the final version.)`);
-                // Optional: window.print(); 
+                alert(`Official Certificate Generated for: ${userName}\n\nThis confirms completion of PCSR Training 2026.`);
             }
         });
     }
 
-    // 4. QUIZ OPTION SELECTION LOGIC
-    // This allows users to click buttons to select answers
+    // 4. QUIZ OPTION HIGHLIGHTING (THE BLUE SELECTION EFFECT)
     document.querySelectorAll(".quiz-option").forEach(button => {
         button.addEventListener("click", function() {
             const parent = this.parentElement;
+            // Remove selection from others in the same question
             parent.querySelectorAll(".quiz-option").forEach(btn => btn.classList.remove("selected"));
+            // Highlight this one
             this.classList.add("selected");
         });
     });
+
+    // 5. DARK MODE TOGGLE
+    const darkToggle = document.getElementById("darkModeToggle");
+    if (darkToggle) {
+        darkToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+        });
+    }
 });
