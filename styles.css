@@ -98,17 +98,8 @@ body {
 
 /* ===== MAIN CONTENT ===== */
 main {
-  margin-left: 260px;
   padding: 2rem;
   flex: 1;
-}
-
-.content-section {
-  display: none;
-}
-
-.content-section.active {
-  display: block;
 }
 
 .content-section h2 {
