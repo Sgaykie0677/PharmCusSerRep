@@ -1,0 +1,239 @@
+/* === BOLD CORPORATE THEME === */
+:root {
+  --black: #111111;
+  --charcoal: #222222;
+  --silver: #e5e5e5;
+  --text-light: #f4f4f4;
+  --accent: #555555;
+}
+
+/* === LAYOUT === */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+}
+
+/* === SIDEBAR === */
+.sidebar {
+  width: 260px;
+  background: var(--black);
+  color: var(--text-light);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 25px 20px;
+  box-sizing: border-box;
+}
+
+.sidebar-logo img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.sidebar-title {
+  text-align: center;
+  margin: 10px 0 25px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-link {
+  color: var(--silver);
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: var(--charcoal);
+}
+
+/* === CONTENT WRAPPER === */
+.content-wrapper {
+  margin-left: 260px;
+  padding: 30px 40px;
+  width: calc(100% - 260px);
+}
+
+/* === PROGRESS BAR === */
+.progress-container {
+  width: 100%;
+  background: #dcdcdc;
+  height: 10px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 10px;
+  width: 0%;
+  background: var(--black);
+  transition: width 0.4s ease;
+}
+
+/* === CONTENT SECTIONS === */
+.content-section {
+  background: white;
+  padding: 25px;
+  border-radius: 6px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  margin-left: 260px;
+  padding: 2rem;
+  flex: 1;
+}
+
+.content-section {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+}
+
+.content-section h2 {
+  margin-bottom: 1rem;
+  color: #143d6b;
+}
+
+p {
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #143d6b;
+  color: #fff;
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+  border-top: 4px solid #0f2e52;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: #ffffff;
+  border: 1px solid #dce1eb;
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+.card h3,
+.card h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== QUIZ STYLES (for later sections) ===== */
+.quiz-question {
+  margin-bottom: 1rem;
+}
+
+.quiz-option {
+  padding: 0.4rem 0.7rem;
+  margin-right: 0.4rem;
+  margin-top: 0.3rem;
+  border: 1px solid #c4cbe0;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quiz-option.selected {
+  background: #143d6b;
+  color: #fff;
+  border-color: #143d6b;
+}
+
+.primary-btn {
+  padding: 0.5rem 1rem;
+  background: #143d6b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.quiz-result {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+.nav-link.completed::after {
+  content: "✔";
+  float: right;
+  color: #4caf50;
+  font-weight: bold;
+}
+/* === SUBTLE ANIMATIONS === */
+.content-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.content-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-link {
+  transition: background 0.25s ease, padding-left 0.25s ease;
+}
+
+.nav-link:hover {
+  padding-left: 18px;
+}
+/* === DARK MODE === */
+body.dark {
+  background: #1a1a1a;
+  color: #eaeaea;
+}
+
+body.dark .content-section {
+  background: #2a2a2a;
+  color: #eaeaea;
+}
+
+body.dark .sidebar {
+  background: #000;
+}
+
+body.dark .nav-link {
+  color: #ccc;
+}
+
+body.dark .nav-link:hover {
+  background: #333;
+}
+
+body.dark #backToTop {
+  background: #333;
+}
+
