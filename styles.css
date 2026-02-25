@@ -191,3 +191,23 @@ body.dark .card {
   width: 0%;
   transition: width 0.4s ease;
 }
+
+/* === FOOTER VISIBILITY FIX === */
+footer {
+  margin-left: 0; /* Ensures it starts from the edge of the content area */
+  background: var(--primary-blue);
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  clear: both; /* Tells the browser to put this below EVERYTHING else */
+  position: relative;
+  z-index: 5;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: white !important; /* This keeps your name visible even in Dark Mode */
+}
