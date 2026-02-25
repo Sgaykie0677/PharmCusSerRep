@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PCSR Certification — Certificate of Completion</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .certificate-container {
+      background: #ffffff;
+      width: 900px;
+      padding: 50px 60px 60px;
+      border-radius: 8px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.15);
+      border-top: 12px solid #111111;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo-wrapper {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo-wrapper img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.25);
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 10px 0 5px;
+      color: #111111;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 0;
+      color: #444444;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .recipient-label {
+      font-size: 16px;
+      color: #666666;
+      margin-top: 30px;
+    }
+
+    .recipient-name {
+      font-size: 32px;
+      margin: 8px 0 10px;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    .description {
+      font-size: 18px;
+      color: #555555;
+      margin: 25px 0 40px;
+      line-height: 1.6;
+    }
+
+    .bottom-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 40px;
+    }
+
+    .signature-block {
+      text-align: left;
+    }
+
+    .signature-img {
+      width: 260px;
+      margin-bottom: 5px;
+    }
+
+    .signature-title {
+      font-size: 14px;
+      color: #333333;
+      font-weight: bold;
+    }
+
+    .date-block {
+      text-align: right;
+      font-size: 14px;
+      color: #555555;
+    }
+
+    .footer-note {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #777777;
+      text-align: center;
+    }
+
+    .btn-row {
+      margin-top: 35px;
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 22px;
+      background: #111111;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+
+    .btn:hover {
+      background: #333333;
+      transform: translateY(-1px);
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .certificate-container {
+        box-shadow: none;
+        border: none;
+        margin: 0;
+        width: 100%;
+      }
+      .btn-row {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="certificate-container">
+    <div class="logo-wrapper">
+      <img src="ConfinedNix.png" alt="PCSR Program Logo">
+    </div>
+
+    <h1>Certificate of Completion</h1>
+    <h2>PCSR Training Program</h2>
+
+    <div class="recipient-label">This certifies that</div>
+    <div class="recipient-name" id="certName">[Learner Name]</div>
+
+    <p class="description">
+      Has successfully completed the PCSR Training Curriculum, demonstrating proficiency in pharmacy systems,
+      claims research, member support, medication safety, specialty workflows, and advanced call‑handling scenarios.
+    </p>
+
+    <div class="bottom-row">
+      <div class="signature-block">
+        <img src="signature.jpeg" class="signature-img" alt="Signature">
+        <div class="signature-title">Chandra Harris — Lead Instructional Designer</div>
+      </div>
+
+      <div class="date-block">
+        <div><strong>Issued on:</strong></div>
+        <div id="date"></div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      PCSR Training Program · Internal Certification Document
+    </div>
+
+    <div class="btn-row">
+      <button onclick="window.print()" class="btn">Download as PDF</button>
+      <a href="index.html" class="btn">Return to Training</a>
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name") || "[Learner Name]";
+    document.getElementById("certName").textContent = name;
+
+    document.getElementById("date").textContent =
+      new Date().toLocaleDateString();
+  </script>
+
+</body>
+</html>
+
