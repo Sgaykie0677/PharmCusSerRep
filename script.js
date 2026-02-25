@@ -5,8 +5,6 @@
 /* -------------------------------
    1. SECTION REGISTRATION
 --------------------------------*/
-const sections = [
-  "home",
   const sections = [
   "home",
   "module1",
